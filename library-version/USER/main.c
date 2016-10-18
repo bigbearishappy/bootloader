@@ -17,21 +17,26 @@ void jump2app(void)
 
 int main(void)
 {
+	char flag = 1;
 	RCC_Configuration();
 	GPIO_Configuration();
 	USART_Configuration();
 	delay_init(72);
-	//while(1)
-	//{
+	while(flag)
+	{
 		if(GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_0))//if PB0 is high
 		{
+			flag = 0;
 		    //1 erase the flash
+			FlashAllErase();
 			//2 program the flash
+			FlashProgram();
 		}
-		else
+
+		if(flag == 0)
 		{
 		    jump2app();
 		}
-	//}   
+	}   
 }
 

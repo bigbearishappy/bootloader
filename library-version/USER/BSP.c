@@ -163,6 +163,35 @@ unsigned short Program_Flash_ReadHalfWord(unsigned int address)
 	return result;
 }
 
+//erase the data from flash
+void FlashAllErase(void)
+{
+	char n = 0;
+
+	FLASH_Unlock();
+	
+	FLASH_ClearFlag(FLASH_FLAG_EOP | FLASH_FLAG_PGERR | FLASH_FLAG_WRPRTERR);
+	for(n = 8; n < 64; n++)
+	{
+		FLASH_ErasePage(0x8000000 + (n * PAGESIZE));
+	}
+	
+	FLASH_Lock();
+
+}
+
+void FlashProgram(void)
+{
+	unsigned int i = 0;
+	unsigned short temp = 0;
+	for(i = 0;i < MAXSIZE; i += 2)
+	{
+		temp = uart_data[i]<<8 | uart_data[i + 1];
+		FLASH_ProgramHalfWord(IAPSTART + i,temp);
+			
+	}
+}
+
 
 void EXTI9_5_IRQHandler(void)
 {
@@ -192,7 +221,9 @@ void USART1_IRQHandler (void)
 	    //add the interrupt code
 		//uart_data[cnt++] = USART_ReceiveData(USART1);
 		temp = USART_ReceiveData(USART1);
-		res = Queueputc(&queue,temp);
+		uart_data[cnt++] = temp;
+		//res = Queueputc(&queue,temp);
+
 		USART_ClearITPendingBit(USART1, USART_IT_RXNE);
 	}
 }

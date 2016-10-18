@@ -5,7 +5,8 @@
 
 #define IAPSTART	0x8002000//bootloader memory is 8KB			
 
-#define MAXSIZE	1024
+#define MAXSIZE	1024*5
+#define PAGESIZE 1024
 
 extern unsigned char buffer[MAXSIZE];
 extern Queue_l queue;
@@ -18,6 +19,8 @@ void GPIO_NVIC_Init(void);
 void USART_Configuration(void);
 void Program_Flash_HalfWord(unsigned int address,unsigned short data);
 unsigned short Program_Flash_ReadHalfWord(unsigned int address);
+void FlashAllErase(void);
+void FlashProgram(void);
 
 #endif
 
