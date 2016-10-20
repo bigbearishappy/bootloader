@@ -1,0 +1,147 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+E:\嵌入式\百度云同步盘\工作后\16年\10-12\16年第14周1016-1022\bootloader\library-app\lib_bootloader.uvproj
+Project File Date:  10/20/2016
+
+<h2>Output:</h2>
+compiling main.c...
+USER\main.c - 0 Error(s), 0 Warning(s).
+Build target 'lib_boot'
+linking...
+Program Size: Code=10340 RO-data=268 RW-data=56 ZI-data=11888  
+FromELF: creating hex file...
+User command #1: C:\Keil\ARM\BIN40\fromelf.exe --bin -o D:\library-app.bin E:\16年下半年安排\第7周829-902\bootloader\mybootloader\git\library-version\output\lib_bootloader.axf
+--- Error: User Command terminated, Exit-Code = 1
+".\output\lib_bootloader.axf" - 1 Error(s), 0 Warning(s).
+Build target 'lib_boot'
+linking...
+Program Size: Code=10340 RO-data=268 RW-data=56 ZI-data=11888  
+FromELF: creating hex file...
+User command #1: D:\Keil\ARM\BIN40\fromelf.exe --bin -o E:\library-app.bin E:\嵌入式\百度云同步盘\工作后\16年\10-12\16年第14周1016-1022\bootloader\library-version\output\lib_bootloader.axf
+".\output\lib_bootloader.axf" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+USER\main.c(10): error:  #20: identifier "flag" is undefined
+USER\main.c(12): warning:  #223-D: function "GPIO_Setbits" declared implicitly
+USER\main.c(14): warning:  #223-D: function "GPIO_Resetbits" declared implicitly
+USER\main.c - 1 Error(s), 2 Warning(s).
+Build target 'lib_boot'
+compiling main.c...
+compiling BSP.c...
+linking...
+Program Size: Code=4456 RO-data=268 RW-data=44 ZI-data=1636  
+FromELF: creating hex file...
+User command #1: D:\Keil\ARM\BIN40\fromelf.exe --bin -o E:\library-app.bin E:\嵌入式\百度云同步盘\工作后\16年\10-12\16年第14周1016-1022\bootloader\library-version\output\lib_bootloader.axf
+".\output\lib_bootloader.axf" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+USER\main.c - 0 Error(s), 0 Warning(s).
+Build target 'lib_boot'
+linking...
+Program Size: Code=4456 RO-data=268 RW-data=44 ZI-data=1636  
+FromELF: creating hex file...
+User command #1: D:\Keil\ARM\BIN40\fromelf.exe --bin -o E:\library-app.bin E:\嵌入式\百度云同步盘\工作后\16年\10-12\16年第14周1016-1022\bootloader\library-version\output\lib_bootloader.axf
+".\output\lib_bootloader.axf" - 0 Error(s), 0 Warning(s).
+Rebuild target 'lib_boot'
+compiling main.c...
+compiling stm32f10x_it.c...
+compiling delay.c...
+compiling BSP.c...
+compiling misc.c...
+compiling stm32f10x_flash.c...
+compiling stm32f10x_gpio.c...
+compiling stm32f10x_rcc.c...
+compiling core_cm3.c...
+compiling system_stm32f10x.c...
+assembling startup_stm32f10x_md.s...
+linking...
+Program Size: Code=4456 RO-data=268 RW-data=44 ZI-data=1636  
+FromELF: creating hex file...
+User command #1: D:\Keil\ARM\BIN40\fromelf.exe --bin -o E:\library-app.bin E:\嵌入式\百度云同步盘\工作后\16年\10-12\16年第14周1016-1022\bootloader\library-version\output\lib_bootloader.axf
+".\output\lib_bootloader.axf" - 0 Error(s), 0 Warning(s).
+Build target 'lib_boot'
+linking...
+Program Size: Code=4456 RO-data=268 RW-data=44 ZI-data=1636  
+FromELF: creating hex file...
+User command #1: D:\Keil\ARM\BIN40\fromelf.exe --bin -o E:\library-app.bin E:\嵌入式\百度云同步盘\工作后\16年\10-12\16年第14周1016-1022\bootloader\library-version\output\lib_bootloader.axf
+".\output\lib_bootloader.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\嵌入式\\百度云同步盘\\工作后\\16年\\10-12\\16年第14周1016-1022\\bootloader\\library-app\\output\\lib_bootloader.AXF" 
+Internal DLL Error
+Build target 'lib_boot'
+linking...
+Program Size: Code=4456 RO-data=268 RW-data=44 ZI-data=1636  
+FromELF: creating hex file...
+User command #1: D:\Keil\ARM\BIN40\fromelf.exe --bin -o E:\library-app.bin E:\嵌入式\百度云同步盘\工作后\16年\10-12\16年第14周1016-1022\bootloader\library-version\output\lib_bootloader.axf
+".\output\lib_bootloader.axf" - 0 Error(s), 0 Warning(s).
+Build target 'lib_boot'
+linking...
+Program Size: Code=4456 RO-data=268 RW-data=44 ZI-data=1636  
+FromELF: creating hex file...
+User command #1: D:\Keil\ARM\BIN40\fromelf.exe --bin -o E:\library-app.bin E:\嵌入式\百度云同步盘\工作后\16年\10-12\16年第14周1016-1022\bootloader\library-version\output\lib_bootloader.axf
+".\output\lib_bootloader.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\嵌入式\\百度云同步盘\\工作后\\16年\\10-12\\16年第14周1016-1022\\bootloader\\library-app\\output\\lib_bootloader.AXF" 
+Internal DLL Error
+Build target 'lib_boot'
+linking...
+Program Size: Code=4456 RO-data=268 RW-data=44 ZI-data=1636  
+FromELF: creating hex file...
+User command #1: D:\Keil\ARM\BIN40\fromelf.exe --bin -o E:\library-app.bin E:\嵌入式\百度云同步盘\工作后\16年\10-12\16年第14周1016-1022\bootloader\library-version\output\lib_bootloader.axf
+".\output\lib_bootloader.axf" - 0 Error(s), 0 Warning(s).
+Load "E:\\嵌入式\\百度云同步盘\\工作后\\16年\\10-12\\16年第14周1016-1022\\bootloader\\library-app\\output\\lib_bootloader.AXF" 
+* JLink Info: Device "STM32F103C8" selected (64 KB flash, 20 KB RAM).
+Set JLink Project File to "E:\嵌入式\百度云同步盘\工作后\16年\10-12\16年第14周1016-1022\bootloader\library-app\JLinkSettings.ini"
+ 
+JLink info:
+------------
+DLL: V4.36l, compiled Dec  2 2011 18:52:36
+Firmware: J-Link ARM V8 compiled Jan 31 2018 18:34:52
+Hardware: V8.00
+S/N : 20080643 
+Feature(s) : RDI,FlashDL,FlashBP,JFlash,GDBFull 
+ 
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+ROMTableAddr = 0xE00FF003
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+ 
+Target info:
+------------
+Device: STM32F103C8
+VTarget = 3.306V
+State of Pins: 
+TCK: 0, TDI: 0, TDO: 1, TMS: 0, TRES: 1, TRST: 1
+Hardware-Breakpoints: 6
+Software-Breakpoints: 8192
+Watchpoints:          4
+JTAG speed: 2000 kHz
+ 
+Erase Done.
+Programming Done.
+Verify OK.
+* JLink Info: Found SWD-DP with ID 0x1BA01477
+* JLink Info: TPIU fitted.
+* JLink Info:   FPUnit: 6 code (BP) slots and 2 literal slots
+* JLink Info: Found Cortex-M3 r1p1, Little endian.
+Application running ...
+Build target 'lib_boot'
+compiling system_stm32f10x.c...
+linking...
+Program Size: Code=4460 RO-data=268 RW-data=44 ZI-data=1636  
+FromELF: creating hex file...
+User command #1: D:\Keil\ARM\BIN40\fromelf.exe --bin -o E:\library-app.bin E:\嵌入式\百度云同步盘\工作后\16年\10-12\16年第14周1016-1022\bootloader\library-version\output\lib_bootloader.axf
+".\output\lib_bootloader.axf" - 0 Error(s), 0 Warning(s).
+Build target 'lib_boot'
+compiling main.c...
+linking...
+Program Size: Code=4460 RO-data=268 RW-data=44 ZI-data=1636  
+FromELF: creating hex file...
+User command #1: D:\Keil\ARM\BIN40\fromelf.exe --bin -o E:\library-app.bin E:\嵌入式\百度云同步盘\工作后\16年\10-12\16年第14周1016-1022\bootloader\library-version\output\lib_bootloader.axf
+".\output\lib_bootloader.axf" - 0 Error(s), 0 Warning(s).
+Clean started: Project: 'lib_bootloader'
+   deleting intermediate output files for target 'lib_boot'
