@@ -106,6 +106,7 @@ void USART_Configuration(void)
 
 	Queueinit(&queue,buffer,sizeof(buffer));//initialize the queue loop
 
+	NVIC_SetVectorTable(NVIC_VectTab_FLASH,0x08000000);
     RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA, ENABLE);	
 	
 	GPIO_initconfiguration.GPIO_Speed = GPIO_Speed_50MHz;
