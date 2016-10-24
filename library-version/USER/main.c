@@ -17,7 +17,9 @@ void jump2app(void)
 
 int main(void)
 {
-	char flag = 1;
+	char flag = 1,i;
+	char head[3],tail[2];
+	short data_seq,data_len;
 	RCC_Configuration();
 	GPIO_Configuration();
 	USART_Configuration();
@@ -29,8 +31,24 @@ int main(void)
 			flag = 0;
 		    //1 erase the flash
 			FlashAllErase();
-			//2 program the flash
-			FlashProgram();
+			while(!Queueisempty(&queue)){
+				for(i = 0;i < 3; i++)
+					head[i] = Queuegetc(&queue);
+				if(head[0] == 0xff&&head[1] == 0xff&&head[2] == 0xff){
+					data_seq = Queuegetc(&queue);
+					data_len = Queuegetc(&queue);
+					for(i = 0;i < BASESIZE; i++)
+						uart_temp[i] = Queuegetc(&queue);
+					for(i = 0;i < 2; i++)
+						tail[i] = Queuegetc(&queue);
+					if(tail[0] == 0xff&&tail[1] == 0xff){
+						//2 program the flash
+						FlashProgram();
+					}
+				}
+				else
+					break;
+			}
 		}
 
 		if(flag == 0)

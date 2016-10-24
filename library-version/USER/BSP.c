@@ -1,6 +1,7 @@
 #include "BSP.h"
 
 unsigned char uart_data[MAXSIZE] = {0};
+unsigned char uart_temp[BASESIZE] = {0XFF};
 char data_rdy_flag = 0x00;//0x00 is unready,0x01 is ready
 int cnt = 0;
 
@@ -222,8 +223,8 @@ void USART1_IRQHandler (void)
 	    //add the interrupt code
 		//uart_data[cnt++] = USART_ReceiveData(USART1);
 		temp = USART_ReceiveData(USART1);
-		uart_data[cnt++] = temp;
-		//res = Queueputc(&queue,temp);
+		//uart_data[cnt++] = temp;
+		res = Queueputc(&queue,temp);
 
 		USART_ClearITPendingBit(USART1, USART_IT_RXNE);
 	}

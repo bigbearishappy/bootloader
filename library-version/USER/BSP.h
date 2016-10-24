@@ -5,10 +5,12 @@
 
 #define IAPSTART	0x8002000//bootloader memory is 8KB			
 
+#define BASESIZE 1024
 #define MAXSIZE	1024*5
 #define PAGESIZE 1024
 
 extern unsigned char buffer[MAXSIZE];
+extern unsigned char uart_temp[BASESIZE];
 extern Queue_l queue;
 
 void RCC_Configuration(void);

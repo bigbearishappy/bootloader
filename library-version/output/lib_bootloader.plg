@@ -7,3 +7,67 @@ E:\16年下半年安排\第7周829-902\bootloader\mybootloader\git\library-version\lib_b
 Project File Date:  10/20/2016
 
 <h2>Output:</h2>
+compiling main.c...
+USER\BSP.h(14): error:  #65: expected a ";"
+USER\BSP.h:   extern Queue_l queue;
+USER\BSP.h:   ^
+USER\main.c(34): error:  #20: identifier "queue" is undefined
+USER\main.c:                    while(!Queueisempty(&queue)){
+USER\main.c:                                         ^
+USER\main.c(22): warning:  #550-D: variable "data_seq" was set but never used
+USER\main.c:    short data_seq,data_len;
+USER\main.c:          ^
+USER\main.c(22): warning:  #550-D: variable "data_len" was set but never used
+USER\main.c:    short data_seq,data_len;
+USER\main.c:                   ^
+USER\main.c: USER\main.c: 2 warnings, 2 errors
+USER\main.c - 2 Error(s), 2 Warning(s).
+Build target 'lib_boot'
+compiling main.c...
+USER\main.c(22): warning:  #550-D: variable "data_seq" was set but never used
+USER\main.c:    short data_seq,data_len;
+USER\main.c:          ^
+USER\main.c(22): warning:  #550-D: variable "data_len" was set but never used
+USER\main.c:    short data_seq,data_len;
+USER\main.c:                   ^
+USER\main.c: USER\main.c: 2 warnings, 0 errors
+compiling BSP.c...
+USER\BSP.c(108): warning:  #167-D: argument of type "unsigned char *" is incompatible with parameter of type "char *"
+USER\BSP.c:     Queueinit(&queue,buffer,sizeof(buffer));//initialize the queue loop
+USER\BSP.c:                      ^
+USER\BSP.c(144): warning:  #550-D: variable "status" was set but never used
+USER\BSP.c:     FLASH_Status status = FLASH_COMPLETE;
+USER\BSP.c:                  ^
+USER\BSP.c(220): warning:  #550-D: variable "res" was set but never used
+USER\BSP.c:     char res = 0;   
+USER\BSP.c:          ^
+USER\BSP.c: USER\BSP.c: 3 warnings, 0 errors
+linking...
+Program Size: Code=10620 RO-data=268 RW-data=1080 ZI-data=11888  
+FromELF: creating hex file...
+User command #1: C:\Keil\ARM\BIN40\fromelf.exe --bin -o D:\aa.bin E:\16年下半年安排\第7周829-902\bootloader\mybootloader\git\library-version\output\lib_bootloader.axf
+".\output\lib_bootloader.axf" - 0 Error(s), 5 Warning(s).
+compiling main.c...
+USER\main.c(22): warning:  #550-D: variable "data_seq" was set but never used
+USER\main.c:    short data_seq,data_len;
+USER\main.c:          ^
+USER\main.c(22): warning:  #550-D: variable "data_len" was set but never used
+USER\main.c:    short data_seq,data_len;
+USER\main.c:                   ^
+USER\main.c: USER\main.c: 2 warnings, 0 errors
+USER\main.c - 0 Error(s), 2 Warning(s).
+Build target 'lib_boot'
+linking...
+Program Size: Code=10620 RO-data=268 RW-data=1080 ZI-data=11888  
+FromELF: creating hex file...
+User command #1: C:\Keil\ARM\BIN40\fromelf.exe --bin -o D:\aa.bin E:\16年下半年安排\第7周829-902\bootloader\mybootloader\git\library-version\output\lib_bootloader.axf
+".\output\lib_bootloader.axf" - 0 Error(s), 0 Warning(s).
+compiling main.c...
+USER\main.c(22): warning:  #550-D: variable "data_seq" was set but never used
+USER\main.c:    short data_seq,data_len;
+USER\main.c:          ^
+USER\main.c(22): warning:  #550-D: variable "data_len" was set but never used
+USER\main.c:    short data_seq,data_len;
+USER\main.c:                   ^
+USER\main.c: USER\main.c: 2 warnings, 0 errors
+USER\main.c - 0 Error(s), 2 Warning(s).
