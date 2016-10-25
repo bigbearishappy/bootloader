@@ -1,0 +1,28 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+E:\嵌入式\百度云同步盘\工作后\16年\10-12\16年第14周1016-1022\bootloader\STM32_LED-app\MDK-ARM\Project.uvproj
+Project File Date:  10/25/2016
+
+<h2>Output:</h2>
+Build target 'LED'
+linking...
+Program Size: Code=1792 RO-data=336 RW-data=4 ZI-data=1636  
+FromELF: creating hex file...
+User command #1: D:\Keil\ARM\BIN40\fromelf.exe --bin -o E:\bb.bin E:\嵌入式\百度云同步盘\工作后\16年\10-12\16年第14周1016-1022\bootloader\STM32_LED-app\MDK-ARM\Obj\Project.axf
+".\Obj\Project.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LED'
+compiling system_stm32f10x.c...
+linking...
+Program Size: Code=1792 RO-data=336 RW-data=4 ZI-data=1636  
+FromELF: creating hex file...
+User command #1: D:\Keil\ARM\BIN40\fromelf.exe --bin -o E:\bb.bin E:\嵌入式\百度云同步盘\工作后\16年\10-12\16年第14周1016-1022\bootloader\STM32_LED-app\MDK-ARM\Obj\Project.axf
+".\Obj\Project.axf" - 0 Error(s), 0 Warning(s).
+Build target 'LED'
+linking...
+Program Size: Code=1792 RO-data=336 RW-data=4 ZI-data=1636  
+FromELF: creating hex file...
+User command #1: D:\Keil\ARM\BIN40\fromelf.exe --bin -o E:\bb.bin E:\嵌入式\百度云同步盘\工作后\16年\10-12\16年第14周1016-1022\bootloader\STM32_LED-app\MDK-ARM\Obj\Project.axf
+".\Obj\Project.axf" - 0 Error(s), 0 Warning(s).

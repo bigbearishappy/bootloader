@@ -1,0 +1,69 @@
+### uVision2 Project, (C) Keil Software
+### Do not modify !
+
+ cExt (*.c)
+ aExt (*.s*; *.src; *.a*)
+ oExt (*.obj)
+ lExt (*.lib)
+ tExt (*.txt; *.h; *.inc)
+ pExt (*.plm)
+ CppX (*.cpp)
+ DaveTm { 0,0,0,0,0,0,0,0 }
+
+Target (LED), 0x0004 // Tools: 'ARM-ADS'
+GRPOPT 1,(User),1,0,0
+GRPOPT 2,(StdPeriph_Driver),0,0,0
+GRPOPT 3,(CMSIS),0,0,0
+GRPOPT 4,(Startup),0,0,0
+GRPOPT 5,(delay),1,0,0
+
+OPTFFF 1,1,1,67108864,0,1,1,0,<..\USER\main.c><main.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,249,254,255,255,6,0,0,0,255,2,0,0,133,1,0,0 }
+OPTFFF 1,2,1,0,0,102,102,0,<..\USER\stm32f10x_it.c><stm32f10x_it.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,22,0,0,0,29,0,0,0,252,2,0,0,83,1,0,0 }
+OPTFFF 1,3,5,0,0,40,40,0,<..\USER\stm32f10x_conf.h><stm32f10x_conf.h> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,44,0,0,0,58,0,0,0,18,3,0,0,112,1,0,0 }
+OPTFFF 2,4,1,0,0,0,0,0,<..\Libraries\STM32F10x_StdPeriph_Driver\src\misc.c><misc.c> 
+OPTFFF 2,5,1,0,0,0,0,0,<..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_flash.c><stm32f10x_flash.c> 
+OPTFFF 2,6,1,83886080,0,0,0,0,<..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_gpio.c><stm32f10x_gpio.c> 
+OPTFFF 2,7,1,83886080,0,136,136,0,<..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rcc.c><stm32f10x_rcc.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,22,0,0,0,29,0,0,0,252,2,0,0,83,1,0,0 }
+OPTFFF 2,8,1,0,0,0,0,0,<..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_adc.c><stm32f10x_adc.c> 
+OPTFFF 2,9,1,0,0,0,0,0,<..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_bkp.c><stm32f10x_bkp.c> 
+OPTFFF 2,10,1,0,0,0,0,0,<..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_can.c><stm32f10x_can.c> 
+OPTFFF 2,11,1,0,0,0,0,0,<..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_cec.c><stm32f10x_cec.c> 
+OPTFFF 2,12,1,0,0,0,0,0,<..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_crc.c><stm32f10x_crc.c> 
+OPTFFF 2,13,1,0,0,0,0,0,<..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dac.c><stm32f10x_dac.c> 
+OPTFFF 2,14,1,0,0,0,0,0,<..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dbgmcu.c><stm32f10x_dbgmcu.c> 
+OPTFFF 2,15,1,0,0,0,0,0,<..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c><stm32f10x_dma.c> 
+OPTFFF 2,16,1,0,0,0,0,0,<..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_exti.c><stm32f10x_exti.c> 
+OPTFFF 2,17,1,0,0,0,0,0,<..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_fsmc.c><stm32f10x_fsmc.c> 
+OPTFFF 2,18,1,0,0,0,0,0,<..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_i2c.c><stm32f10x_i2c.c> 
+OPTFFF 2,19,1,0,0,0,0,0,<..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_iwdg.c><stm32f10x_iwdg.c> 
+OPTFFF 2,20,1,0,0,0,0,0,<..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_pwr.c><stm32f10x_pwr.c> 
+OPTFFF 2,21,1,0,0,0,0,0,<..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_rtc.c><stm32f10x_rtc.c> 
+OPTFFF 2,22,1,0,0,0,0,0,<..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_sdio.c><stm32f10x_sdio.c> 
+OPTFFF 2,23,1,0,0,0,0,0,<..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_spi.c><stm32f10x_spi.c> 
+OPTFFF 2,24,1,0,0,0,0,0,<..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_tim.c><stm32f10x_tim.c> 
+OPTFFF 2,25,1,0,0,0,0,0,<..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_usart.c><stm32f10x_usart.c> 
+OPTFFF 2,26,1,0,0,0,0,0,<..\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_wwdg.c><stm32f10x_wwdg.c> 
+OPTFFF 3,27,1,0,0,91,91,0,<..\Libraries\CMSIS\CM3\CoreSupport\core_cm3.c><core_cm3.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,66,0,0,0,87,0,0,0,40,3,0,0,141,1,0,0 }
+OPTFFF 3,28,1,369098752,0,503,503,0,<..\USER\system_stm32f10x.c><system_stm32f10x.c> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,44,0,0,0,58,0,0,0,18,3,0,0,112,1,0,0 }
+OPTFFF 4,29,2,0,0,336,336,0,<..\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x\startup\arm\startup_stm32f10x_hd.s><startup_stm32f10x_hd.s> { 44,0,0,0,0,0,0,0,1,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,66,0,0,0,87,0,0,0,40,3,0,0,141,1,0,0 }
+OPTFFF 5,30,1,671088642,0,1,1,0,<..\delay\delay.c><delay.c> { 44,0,0,0,2,0,0,0,3,0,0,0,255,255,255,255,255,255,255,255,252,255,255,255,226,255,255,255,88,0,0,0,116,0,0,0,62,3,0,0,170,1,0,0 }
+
+
+TARGOPT 1, (LED)
+ ADSCLK=8000000
+  OPTTT 1,1,1,0
+  OPTHX 1,65535,0,0,0
+  OPTLX 79,66,8,<.\List\>
+  OPTOX 16
+  OPTLT 1,1,1,0,1,1,0,1,0,0,0,0
+  OPTXL 1,1,1,1,1,1,1,0,0
+  OPTFL 1,0,1
+  OPTAX 0
+  OPTDL (SARMCM3.DLL)()(DARMSTM.DLL)(-pSTM32F103ZE)(SARMCM3.DLL)()(TARMSTM.DLL)(-pSTM32F103ZE)
+  OPTDBG 49150,7,()()()()()()()()()() (Segger\JL2CM3.dll)()()()
+  OPTKEY 0,(JL2CM3)(-U20080643 -O14 -S0 -A0 -C0 -JU1 -JI127.0.0.1 -JP0 -N00("ARM CoreSight JTAG-DP") -D00(3BA00477) -L00(4) -N01("Unknown JTAG device") -D01(06414041) -L01(5) -TO18 -TC10000000 -TP21 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -TB1 -TRE0 -FO15 -FD20000000 -FC800 -FN1 -FF0STM32F10x_512 -FS08000000 -FL080000)
+  OPTDF 0x0
+  OPTLE <>
+  OPTLC <>
+EndOpt
+

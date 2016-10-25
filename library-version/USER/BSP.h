@@ -5,7 +5,7 @@
 
 #define IAPSTART	0x8003000//bootloader memory is 8KB			
 
-#define MAXSIZE	1024*5
+#define MAXSIZE	1024*6
 #define PAGESIZE 1024
 
 extern unsigned char buffer[MAXSIZE];

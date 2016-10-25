@@ -1,6 +1,6 @@
 #include "BSP.h"
 
-unsigned char uart_data[MAXSIZE] = {0};
+unsigned char uart_data[MAXSIZE] = {0xff};
 char data_rdy_flag = 0x00;//0x00 is unready,0x01 is ready
 int cnt = 0;
 
