@@ -19,11 +19,16 @@ int main(void)
 {
 	char flag = 1,i;
 	char head[3],tail[2];
+	unsigned int res = 0;
 	short data_seq,data_len;
 	RCC_Configuration();
 	GPIO_Configuration();
 	USART_Configuration();
 	delay_init(72);
+
+	RCC_AHBPeriphClockCmd(RCC_AHBPeriph_CRC, ENABLE);
+	CRC_ResetDR();
+	res = CRC_CalcCRC(0x11);
 	while(flag)
 	{
 		if(GPIO_ReadInputDataBit(GPIOB,GPIO_Pin_0))//if PB0 is high
